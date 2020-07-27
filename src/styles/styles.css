@@ -15,19 +15,54 @@
 .container .content {
   background-image: url(../assets/bg-pattern-desktop.svg);
   background-size: cover;
-  max-width: 900px;
+  max-width: 700px;
   padding-left: 13rem;
-  padding-right: 25rem;
+  padding-right: 18rem;
+}
+
+@media only screen and (max-width: 1680px) {
+  .container .content {
+    max-width: 600px;
+    padding-left: 10rem;
+    padding-right: 14rem;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .container .content {
+    max-width: 500px;
+    padding-left: 10rem;
+    padding-right: 9rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .content {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 
 .container .content .logo {
   padding-top: 4rem;
-  padding-bottom: 7rem;
-  max-width: 600px;
+  padding-bottom: 9rem;
+  /* max-width: 900px;       */
 }
 
 .container .content .homeImgMobile {
   display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .content .homeImgMobile {
+    display: block;
+  }
+  .container .content .homeImgMobile img {
+    width: 100%;
+  }
 }
 
 .container .content .login {
@@ -38,7 +73,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 600px;
+  /* max-width: 900px; */
 }
 
 .container .content .login .title {
@@ -49,18 +84,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  letter-spacing: 20px;
 }
 
 .container .content .login .title h1 {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 300;
   color: #ce9797;
 }
 
+@media only screen and (max-width: 1440px) {
+  .container .content .login .title h1 {
+    font-size: 60px;
+  }
+}
+
 .container .content .login .title h2 {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 600;
   color: #43393a;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container .content .login .title h2 {
+    font-size: 60px;
+  }
 }
 
 .container .content .login .description {
@@ -71,8 +119,14 @@
 .container .content .login .description span {
   color: #ce9797;
   font-weight: 400;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container .content .login .description span {
+    font-size: 18px;
+  }
 }
 
 .container .content .login form .contentForm {
@@ -142,5 +196,11 @@
           flex: 1;
   background-image: url(../assets/hero-desktop.jpg);
   background-size: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .homeImg {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
